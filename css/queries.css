@@ -1,0 +1,212 @@
+/* 1200px /16 =75em */
+@media (max-width: 75em) {
+    html {
+        font-size: 56.25%;
+    }
+    .gallery-container {
+        grid-template-columns: 1fr 1fr;
+        padding: 1.8rem;
+    }
+}
+/* 1100px */
+@media (max-width: 68em) {
+    html {
+        font-size: 50%;
+    }
+
+    .gallery-container {
+        grid-template-columns: 1fr 1fr;
+        padding: 1.8rem;
+    }
+}
+/* 950 */
+@media (max-width: 68em) {
+    html {
+        font-size: 50%;
+    }
+    .hero {
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .delivered {
+        justify-content: center;
+    }
+    .hero-img {
+        width: 60%;
+    }
+    .featured-logos img {
+        width: 14rem;
+    }
+    .section-testimonials {
+        grid-template-columns: 1fr;
+    }
+    .gallery-container {
+        grid-template-columns: repeat(6, 1fr);
+    }
+    .cta {
+        grid-template-columns: 3fr 2fr;
+    }
+    .cta-form {
+        grid-template-columns: 1fr;
+    }
+}
+/* 700 */
+@media (max-width: 44em) {
+    html {
+        font-size: 38%;
+        overflow-x: hidden;
+    }
+    body {
+        overflow-x: hidden;
+    }
+    .btn-mobile-nav {
+        display: block;
+    }
+    .icon-mobile-nav {
+        font-size: 5.6rem;
+    }
+    .header {
+        position: relative;
+    }
+    .main-nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(255, 255, 255, 0.97);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100vh;
+        opacity: 0;
+        pointer-events: none;
+        visibility: hidden;
+        transition: 0.3s all ease-in-out;
+        transform: translateX(100%);
+    }
+    .nav-open .main-nav {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        transform: translateX(0);
+    }
+    .nav-open .icon-mobile-nav[name="close-outline"] {
+        display: block;
+    }
+    .nav-open .icon-mobile-nav[name="menu-outline"] {
+        display: none;
+    }
+    .main-nav-list {
+        display: flex;
+        flex-direction: column;
+        gap: 6.8rem;
+    }
+    .main-nav-link:link,
+    .main-nav-link:visited {
+        font-size: 3.8rem;
+    }
+    .meals-cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3.6rem;
+    }
+    .meal-list-card {
+        grid-column: 1/-1;
+        justify-self: center;
+    }
+    .section-testimonials {
+        grid-template-columns: 1fr;
+    }
+    .gallery-container {
+        grid-template-columns: repeat(6, 1fr);
+    }
+    .footer-container {
+        grid-template-columns: repeat(6, 1fr);
+        gap: 3.6rem;
+        padding: 5rem 2rem;
+    }
+    .address-col {
+        grid-column: span 3;
+    }
+    .logo-col {
+        grid-column: span 3;
+    }
+    .nav-col {
+        grid-column: span 2;
+        margin-top: 3rem;
+    }
+}
+/* 550 */
+@media (max-width: 34em) {
+    html {
+        font-size: 31%;
+    }
+
+    .section-testimonials {
+        grid-template-columns: 1fr;
+
+        padding: 0;
+
+        column-gap: 1.2rem;
+    }
+    /* .testimonials-container {
+        padding: 1rem;
+    }
+    .testimonials {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        
+    } */
+    /* .testimonials-element {
+        gap: 1.2rem;
+    }
+    .testimonials-container {
+        padding: 3.2rem;
+    }
+    .gallery {
+        width: 60%;
+    }*/
+    .gallery-container {
+        grid-template-columns: repeat(4, 1fr);
+
+        column-gap: 1.2rem;
+        row-gap: 1.2rem;
+        padding: 1rem;
+    }
+    /* .gallery-item img {
+        overflow-clip-margin: content-box;
+        overflow: clip; 
+    }  */
+    .plans {
+        grid-template-columns: 1fr;
+    }
+    .plan {
+        padding: 6.8rem;
+        width: 90%;
+        border-radius: 11px;
+    }
+    .plan--starter {
+        justify-self: center;
+    }
+    .plan--complete {
+        justify-self: center;
+    }
+    .features {
+        grid-template-columns: 1fr;
+    }
+    .cta {
+        grid-template-columns: 1fr;
+    }
+    .cta-img-box {
+        height: 50rem;
+        grid-row: 1;
+    }
+}
+/* 450 */
+@media (max-width: 27.5em) {
+    html {
+        font-size: 25%;
+    }
+}

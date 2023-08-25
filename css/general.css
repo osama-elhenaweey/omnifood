@@ -1,0 +1,59 @@
+/* 
+main color:  #e67e22 
+shades #fdf2e9
+#cf711f
+#b8651b
+grays #343a40
+*/
+html {
+    font-size: 62.5%;
+}
+*:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
+}
+.container {
+    max-width: 125rem;
+    padding: 0 3.2rem;
+    margin: 0 auto;
+}
+.grid {
+    display: grid;
+}
+.grid-two-col {
+    grid-template-columns: 1fr 1fr;
+    gap: 3.6rem;
+}
+.grid-three-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4.8rem;
+}
+.primary-heading {
+    font-weight: 700;
+    font-size: 4.8rem;
+    color: #222;
+    letter-spacing: 1.1;
+    margin-bottom: 5.6rem;
+    line-height: 1.2;
+}
+.secondary-heading {
+    font-weight: 700;
+    font-size: 3.4rem;
+    color: #222;
+    letter-spacing: 1.1;
+    margin-bottom: 3.6rem;
+}
+.trintary-heading {
+    font-weight: 700;
+    font-size: 2.4rem;
+    color: #222;
+    letter-spacing: 1.1;
+    margin-bottom: 2.4rem;
+}
+.margin-right-sm {
+    margin-right: 3.2rem !important;
+}
+.margin-top-large {
+    margin-top: 9.6rem;
+}
